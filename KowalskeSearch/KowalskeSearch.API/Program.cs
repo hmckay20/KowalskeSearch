@@ -8,6 +8,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 // Register the KohlerScrapingService with HttpClient dependency
 builder.Services.AddHttpClient<KohlerScrapingService>();
+builder.Services.AddScoped<KohlerScrapingService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -18,7 +20,10 @@ if (app.Environment.IsDevelopment())
 }
 
 //app.UseHttpsRedirection();
-app.UsePathBase("/api");
+app.UseHttpsRedirection();
+
+app.MapControllers();
+
 
 var summaries = new[]
 {

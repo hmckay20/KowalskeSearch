@@ -17,7 +17,9 @@ public class ProductsController : ControllerBase
   {
     var productInfo = await _scrapingService.GetProductInfoBySerialNumber(serialNumber);
     if (productInfo == null)
+    {
       return NotFound("Product not found.");
+    }
 
     return Ok(productInfo);
   }
