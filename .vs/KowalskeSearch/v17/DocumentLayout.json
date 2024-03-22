@@ -3,20 +3,52 @@
   "WorkspaceRootPath": "C:\\FCSAGit\\KowalskeSearch\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Service\\KohlerScrapingService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KowalskeSearch\\KowalskeSearch.API\\Service\\KohlerScrapingService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\search-bar\\search-bar.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KowalskeSearch\\src\\app\\search-bar\\search-bar.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Model\\ProductInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KowalskeSearch\\KowalskeSearch.API\\Model\\ProductInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\search-bar\\search-bar.component.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KowalskeSearch\\src\\app\\search-bar\\search-bar.component.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\search-bar\\search-bar.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KowalskeSearch\\src\\app\\search-bar\\search-bar.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\search-bar\\Service\\product.service.ts||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KowalskeSearch\\src\\app\\search-bar\\Service\\product.service.ts||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\search-bar\\search-bar.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KowalskeSearch\\src\\app\\search-bar\\search-bar.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KowalskeSearch\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KowalskeSearch\\KowalskeSearch.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Service\\KohlerScrapingService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KowalskeSearch\\KowalskeSearch.API\\Service\\KohlerScrapingService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Controller\\ProductsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KowalskeSearch\\KowalskeSearch.API\\Controller\\ProductsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KowalskeSearch\\KowalskeSearch.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KowalskeSearch\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KowalskeSearch\\src\\app\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Model\\ProductInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KowalskeSearch\\KowalskeSearch.API\\Model\\ProductInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\KowalskeSearch.API.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
@@ -30,37 +62,167 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "search-bar.component.ts",
+              "DocumentMoniker": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\search-bar\\search-bar.component.ts",
+              "RelativeDocumentMoniker": "KowalskeSearch\\src\\app\\search-bar\\search-bar.component.ts",
+              "ToolTip": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\search-bar\\search-bar.component.ts",
+              "RelativeToolTip": "KowalskeSearch\\src\\app\\search-bar\\search-bar.component.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-22T16:33:26.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "product.service.ts",
+              "DocumentMoniker": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\search-bar\\Service\\product.service.ts",
+              "RelativeDocumentMoniker": "KowalskeSearch\\src\\app\\search-bar\\Service\\product.service.ts",
+              "ToolTip": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\search-bar\\Service\\product.service.ts",
+              "RelativeToolTip": "KowalskeSearch\\src\\app\\search-bar\\Service\\product.service.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-22T16:42:12.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "search-bar.component.html",
+              "DocumentMoniker": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\search-bar\\search-bar.component.html",
+              "RelativeDocumentMoniker": "KowalskeSearch\\src\\app\\search-bar\\search-bar.component.html",
+              "ToolTip": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\search-bar\\search-bar.component.html",
+              "RelativeToolTip": "KowalskeSearch\\src\\app\\search-bar\\search-bar.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-22T16:32:45.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "search-bar.component.spec.ts",
+              "DocumentMoniker": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\search-bar\\search-bar.component.spec.ts",
+              "RelativeDocumentMoniker": "KowalskeSearch\\src\\app\\search-bar\\search-bar.component.spec.ts",
+              "ToolTip": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\search-bar\\search-bar.component.spec.ts",
+              "RelativeToolTip": "KowalskeSearch\\src\\app\\search-bar\\search-bar.component.spec.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-22T16:40:19.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "search-bar.component.scss",
+              "DocumentMoniker": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\search-bar\\search-bar.component.scss",
+              "RelativeDocumentMoniker": "KowalskeSearch\\src\\app\\search-bar\\search-bar.component.scss",
+              "ToolTip": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\search-bar\\search-bar.component.scss",
+              "RelativeToolTip": "KowalskeSearch\\src\\app\\search-bar\\search-bar.component.scss",
+              "ViewState": "AQIAAAsAAAAAAAAAAADwvzoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2024-03-22T16:40:01.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "app.module.ts",
+              "DocumentMoniker": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\app.module.ts",
+              "RelativeDocumentMoniker": "KowalskeSearch\\src\\app\\app.module.ts",
+              "ToolTip": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\app.module.ts",
+              "RelativeToolTip": "KowalskeSearch\\src\\app\\app.module.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-22T16:38:54.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "KohlerScrapingService.cs",
               "DocumentMoniker": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Service\\KohlerScrapingService.cs",
               "RelativeDocumentMoniker": "KowalskeSearch\\KowalskeSearch.API\\Service\\KohlerScrapingService.cs",
               "ToolTip": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Service\\KohlerScrapingService.cs",
               "RelativeToolTip": "KowalskeSearch\\KowalskeSearch.API\\Service\\KohlerScrapingService.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABMAAAAAAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAiwDsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-22T05:47:40.015Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Program.cs",
               "RelativeDocumentMoniker": "KowalskeSearch\\KowalskeSearch.API\\Program.cs",
               "ToolTip": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Program.cs",
               "RelativeToolTip": "KowalskeSearch\\KowalskeSearch.API\\Program.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAkwAwAAAAAAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-22T06:21:08.618Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
+              "Title": "app.component.ts",
+              "DocumentMoniker": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\app.component.ts",
+              "RelativeDocumentMoniker": "KowalskeSearch\\src\\app\\app.component.ts",
+              "ToolTip": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\app.component.ts",
+              "RelativeToolTip": "KowalskeSearch\\src\\app\\app.component.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-22T16:33:46.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "app.component.html",
+              "DocumentMoniker": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\app.component.html",
+              "RelativeDocumentMoniker": "KowalskeSearch\\src\\app\\app.component.html",
+              "ToolTip": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\src\\app\\app.component.html",
+              "RelativeToolTip": "KowalskeSearch\\src\\app\\app.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-22T16:33:39.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Controller\\ProductsController.cs",
+              "RelativeDocumentMoniker": "KowalskeSearch\\KowalskeSearch.API\\Controller\\ProductsController.cs",
+              "ToolTip": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Controller\\ProductsController.cs",
+              "RelativeToolTip": "KowalskeSearch\\KowalskeSearch.API\\Controller\\ProductsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T05:31:12.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductInfo.cs",
+              "DocumentMoniker": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Model\\ProductInfo.cs",
+              "RelativeDocumentMoniker": "KowalskeSearch\\KowalskeSearch.API\\Model\\ProductInfo.cs",
+              "ToolTip": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Model\\ProductInfo.cs",
+              "RelativeToolTip": "KowalskeSearch\\KowalskeSearch.API\\Model\\ProductInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T05:45:58.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "KowalskeSearch.API.http",
               "DocumentMoniker": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\KowalskeSearch.API.http",
               "RelativeDocumentMoniker": "KowalskeSearch\\KowalskeSearch.API\\KowalskeSearch.API.http",
@@ -69,32 +231,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
               "WhenOpened": "2024-03-22T05:51:52.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductInfo.cs",
-              "DocumentMoniker": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Model\\ProductInfo.cs",
-              "RelativeDocumentMoniker": "KowalskeSearch\\KowalskeSearch.API\\Model\\ProductInfo.cs",
-              "ToolTip": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Model\\ProductInfo.cs",
-              "RelativeToolTip": "KowalskeSearch\\KowalskeSearch.API\\Model\\ProductInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T05:45:58.269Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Controller\\ProductsController.cs",
-              "RelativeDocumentMoniker": "KowalskeSearch\\KowalskeSearch.API\\Controller\\ProductsController.cs",
-              "ToolTip": "C:\\FCSAGit\\KowalskeSearch\\KowalskeSearch\\KowalskeSearch.API\\Controller\\ProductsController.cs",
-              "RelativeToolTip": "KowalskeSearch\\KowalskeSearch.API\\Controller\\ProductsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAkwBEAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T05:31:12.369Z",
               "EditorCaption": ""
             }
           ]

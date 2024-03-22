@@ -1,63 +1,58 @@
-/* Container for the entire form to center it */
+/* Inside search-bar.component.scss */
+
 .search-form {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-/* Styling the outer box */
 .search-box {
+  position: relative;
   display: flex;
-  align-items: center;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 24px;
-  box-shadow: 0 1px 6px rgba(32,33,36,0.28);
-  padding: 5px 10px;
+  width: 100%;
+  max-width: 500px; /* Adjust based on your preference */
 }
 
-/* Styling the input field */
 .search-input {
-  border: none;
-  margin-right: 8px;
-  padding: 10px;
-  width: 300px;
-  height: 40px;
-  border-radius: 20px;
-  font-size: 16px;
+  width: 100%;
+  padding: 10px 40px 10px 20px; /* Larger left padding for text, smaller right for button */
+  border: 2px solid #007BFF; /* Bootstrap primary color */
+  border-radius: 20px; /* Rounded borders */
+  font-size: 16px; /* Larger font size for visibility */
 }
 
-/* Ensure the input doesn't have an outline when focused */
-.search-input:focus {
-  outline: none;
-  box-shadow: inset 0 0 0 2px #4285f4;
-}
-
-/* Styling the search button */
 .search-button {
-  background-color: #f8f9fa;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #007BFF; /* Bootstrap primary color */
   border: none;
-  border-radius: 50%;
-  cursor: pointer;
+  border-radius: 50%; /* Circular button */
   padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  cursor: pointer;
+  color: white;
 }
 
-/* Removing the default button focus outline */
-.search-button:focus {
-  outline: none;
-}
-
-/* Optional: Using Font Awesome for the search icon */
 .search-button i {
-  color: #5f6368;
-  font-size: 20px;
+  font-size: 20px; /* Larger icon */
 }
 
-/* Adjust button padding if using text instead of an icon */
-/* .search-button {
-  padding: 10px 15px;
-} */
+.product-info {
+  background-color: #f9f9f9; /* Light grey background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  margin: 20px auto;
+  max-width: 500px; /* Match search box width */
+}
+
+.product-info h2 {
+  color: #333; /* Dark grey for contrast */
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  color: #666; /* Lighter text for body */
+  margin: 5px 0;
+}

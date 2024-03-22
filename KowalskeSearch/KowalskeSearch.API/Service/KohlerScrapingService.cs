@@ -26,7 +26,7 @@ public class KohlerScrapingService
         driver.Navigate().GoToUrl(url);
 
         // Example: new WebDriverWait(driver, TimeSpan.FromSeconds(10)).Until(...);
-        var element = driver.FindElement(By.CssSelector($"[id='Inner-{serialNumber}']")); // Corrected to use CSS Selector
+        var element = driver.FindElement(By.CssSelector($"[id='Inner-{serialNumber}'][aria-label]")); // Corrected to use CSS Selector
         if (element != null)
         {
           var ariaLabel = element.GetAttribute("aria-label"); // Corrected variable name
@@ -36,10 +36,10 @@ public class KohlerScrapingService
           {
             return new ProductInfo
             {
-              Name = parts[0].Trim(),
-              Description = parts[1].Trim(),
-              SalePrice = parts[2].Split(' ')[1].Trim(),
-              OriginalPrice = parts[3].Split('.')[0].Trim()
+              Name = parts[0].Trim()??"idk",
+              Description = parts[1].Trim()??"idk",
+              SalePrice = parts[2].Split(' ')[1].Trim()??"idk",
+              OriginalPrice = parts[3].Split('.')[0].Trim()??"idk"
             };
           }
         }

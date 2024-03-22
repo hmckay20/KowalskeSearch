@@ -9,7 +9,17 @@ builder.Services.AddControllers();
 // Register the KohlerScrapingService with HttpClient dependency
 builder.Services.AddHttpClient<KohlerScrapingService>();
 builder.Services.AddScoped<KohlerScrapingService>();
-
+// Add CORS policy
+builder.Services.AddCors(options =>
+{
+  options.AddPolicy("AllowWebApp",
+      policyBuilder =>
+      {
+        policyBuilder.WithOrigins("http://localhost:4200") // Adjust as per your Angular app's URL
+                       .AllowAnyHeader()
+                       .AllowAnyMethod();
+      });
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -17,12 +27,17 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+  app.UseDeveloperExceptionPage();
 }
 
 //app.UseHttpsRedirection();
 app.UseHttpsRedirection();
 
 app.MapControllers();
+
+app.UseCors("AllowWebApp");
+
+app.UseAuthentication();
 
 
 var summaries = new[]
