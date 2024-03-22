@@ -15,7 +15,7 @@ public class ProductsController : ControllerBase
   [HttpGet("{serialNumber}")]
   public async Task<IActionResult> GetProductBySerialNumber(string serialNumber)
   {
-    var productInfo = await _scrapingService.GetProductInfoBySerialNumber(serialNumber);
+    var productInfo =  _scrapingService.GetProductInfoBySerialNumber(serialNumber);
     if (productInfo == null)
     {
       return NotFound("Product not found.");

@@ -1,82 +1,59 @@
-using HtmlAgilityPack;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using System;
-using System.Net.Http;
 using System.Threading.Tasks;
+using WebDriverManager;
+using WebDriverManager.DriverConfigs.Impl;
+using WebDriverManager.Helpers;
 
 public class KohlerScrapingService
 {
-  private readonly IHttpClientFactory _clientFactory;
-
-  public KohlerScrapingService(IHttpClientFactory clientFactory)
+  public KohlerScrapingService()
   {
-    _clientFactory = clientFactory;
+    new DriverManager().SetUpDriver(new ChromeConfig());
   }
 
-  public async Task<ProductInfo> GetProductInfoBySerialNumber(string serialNumber)
+  public ProductInfo GetProductInfoBySerialNumber(string serialNumber)
   {
-    try
+    var options = new ChromeOptions();
+    options.AddArguments("headless"); // Run Chrome in headless mode.
+
+    using (var driver = new ChromeDriver(options))
     {
-      var productInfo = new ProductInfo();
-      // Create a HttpClient instance from the factory
-      var httpClient = _clientFactory.CreateClient();
-
-      // Set the User-Agent and Accept headers to mimic a browser request
-      httpClient.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3");
-      httpClient.DefaultRequestHeaders.Add("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");
-
-      // Construct the URL with the serial number, ensuring to replace {serialNumber} with the actual value
-      var url = $"https://www.kohler.com/en/search?keyword={serialNumber}";
-
-      // Create a HttpRequestMessage to set specific request headers like Cookies
-      var request = new HttpRequestMessage(HttpMethod.Get, url);
-
-      // Adding cookies to the request
-      request.Headers.Add("Cookie", "name=value; anothername=anothervalue");
-
-      // Sending the HTTP GET request using SendAsync instead of GetAsync for HttpRequestMessage
-      var response = await httpClient.SendAsync(request);
-      //Console.WriteLine(response.ToString());
-
-      if (response.IsSuccessStatusCode)
+      try
       {
-        var html = await response.Content.ReadAsStringAsync();
-        var doc = new HtmlDocument();
-       // Console.WriteLine(html);
-        doc.LoadHtml(html);
+        var url = $"https://www.kohler.com/en/search?keyword={serialNumber}";
+        driver.Navigate().GoToUrl(url);
 
-        // XPath query to locate the desired div containing product information
-        var xpathQuery = "//div[@id='Inner-K-29777-PA-0']";
-;
-
-        var div = doc.DocumentNode.SelectSingleNode(xpathQuery);
-        if(div == null)
+        // Example: new WebDriverWait(driver, TimeSpan.FromSeconds(10)).Until(...);
+        var element = driver.FindElement(By.CssSelector($"[id='Inner-{serialNumber}']")); // Corrected to use CSS Selector
+        if (element != null)
         {
-          Console.WriteLine("I do not exist");
-        }
-        if (div != null)
-        {
-          var ariaLabel = div.GetAttributeValue("aria-label", string.Empty);
+          var ariaLabel = element.GetAttribute("aria-label"); // Corrected variable name
 
-          productInfo.Name = ariaLabel;
-
-
-
-          Console.WriteLine($"Product Name: {ariaLabel}");
-          return new ProductInfo
+          var parts = ariaLabel.Split(new string[] { ", Description: ", ", Sale Price: ", " Original Price: " }, StringSplitOptions.None);
+          if (parts.Length > 3) // Corrected property name
           {
-            Name = productInfo.Name,
-            Price = "nothing"
-          };
+            return new ProductInfo
+            {
+              Name = parts[0].Trim(),
+              Description = parts[1].Trim(),
+              SalePrice = parts[2].Split(' ')[1].Trim(),
+              OriginalPrice = parts[3].Split('.')[0].Trim()
+            };
+          }
         }
       }
+      catch (Exception ex)
+      {
+        Console.WriteLine($"An error occurred: {ex.Message}");
+      }
+      finally
+      {
+        driver.Quit();
+      }
+    }
 
-      return null;
-    }
-    catch (Exception ex)
-    {
-      // Log the exception or handle it as needed
-      Console.WriteLine($"An error occurred: {ex.Message}");
-      return null; // You might choose to return a more specific error message or object
-    }
+    return null; // Return null or a default instance as needed.
   }
 }
