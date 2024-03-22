@@ -22,7 +22,7 @@ export class ProductInfo {
 })
 export class SearchBarComponent {
   searchTerm: string = '';
-  productInfo: ProductInfo = new ProductInfo(); // To store the fetched product information
+  productInfos: ProductInfo[] = [];
 
   constructor(private productService: ProductService) { }
 
@@ -30,7 +30,8 @@ export class SearchBarComponent {
     event.preventDefault(); // Prevent form from causing a page reload
     this.productService.getProductBySerialNumber(this.searchTerm).subscribe({
       next: (data) => {
-        this.productInfo = data; // Store the fetched data
+        // Insert the new search result at the beginning of the array
+        this.productInfos.unshift(data);
       },
       error: (error) => {
         console.error('Error fetching product info:', error);

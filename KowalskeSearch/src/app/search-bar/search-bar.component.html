@@ -10,7 +10,7 @@
 </form>
 
 <!-- Display the fetched product information -->
-<div *ngIf="productInfo.name" class="product-info">
+<div *ngFor="let productInfo of productInfos" class="product-info">
   <h2>{{ productInfo.name }}</h2>
   <p>{{ productInfo.description }}</p>
   <p>Original Price: {{ productInfo.originalPrice }}</p>
