@@ -1,18 +1,32 @@
-<!-- Inside search-bar.component.html -->
-
-<form class="search-form" (submit)="onSearch($event)">
-  <div class="search-box">
-    <input type="text" class="search-input" [(ngModel)]="searchTerm" name="search" placeholder="Enter Serial Number..." autofocus>
-    <button type="submit" class="search-button">
-      <i class="fas fa-search"></i>
-    </button>
-  </div>
-</form>
+<!-- Input fields for search terms -->
+<div *ngFor="let searchTerm of searchTerms; let i = index" class="search-box">
+  <input type="text" class="search-input" [(ngModel)]="searchTerms[i]" name="search{{i}}" placeholder="Enter Serial Number" autofocus>
+  <button *ngIf="i > 0" (click)="removeSearchInput(i)" class="remove-button">-</button>
+</div>
+<button (click)="addSearchInput()" class="add-button">Add Another</button>
+<button (click)="onSearchAll()" class="search-all-button">Search All</button>
 
 <!-- Display the fetched product information -->
-<div *ngFor="let productInfo of productInfos" class="product-info">
-  <h2>{{ productInfo.name }}</h2>
-  <p>{{ productInfo.description }}</p>
-  <p>Original Price: {{ productInfo.originalPrice }}</p>
-  <p>Sale Price: {{ productInfo.salePrice }}</p>
-</div>
+
+<!-- Search inputs and Search All button remain the same -->
+<!-- Table for displaying fetched product information -->
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ITEM</th>
+      <th scope="col">IMAGE</th>
+      <th scope="col">DESCRIPTION</th>
+      <th scope="col">COLOR</th>
+      <th scope="col">PRICE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let productInfo of productInfos">
+      <td>{{ productInfo.name }}</td>
+      <td> <!-- Image will go here --> </td>
+      <td>{{ productInfo.description }}</td>
+      <td> <!-- Color will go here --> </td>
+      <td>{{ productInfo.originalPrice }}</td> <!-- Assuming you have a price field -->
+    </tr>
+  </tbody>
+</table>

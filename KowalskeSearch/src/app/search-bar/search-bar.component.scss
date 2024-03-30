@@ -9,6 +9,7 @@
 .search-box {
   position: relative;
   display: flex;
+  align-items: center;
   width: 100%;
   max-width: 500px; /* Adjust based on your preference */
 }
@@ -19,19 +20,25 @@
   border: 2px solid #007BFF; /* Bootstrap primary color */
   border-radius: 20px; /* Rounded borders */
   font-size: 16px; /* Larger font size for visibility */
+  margin-right: 10px;
 }
 
-.search-button {
-  position: absolute;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #007BFF; /* Bootstrap primary color */
+.search-button, .add-button, .remove-button {
   border: none;
+  background-color: #007BFF; /* Bootstrap primary color */
+  color: white;
   border-radius: 50%; /* Circular button */
   padding: 10px;
   cursor: pointer;
-  color: white;
+  margin-left: 5px;
+}
+
+.add-button, .remove-button {
+  font-size: 16px; /* Adjust the font size for better visibility */
+}
+
+.remove-button {
+  background-color: #dc3545; /* Bootstrap danger color for remove button */
 }
 
 .search-button i {
@@ -55,4 +62,27 @@
 .product-info p {
   color: #666; /* Lighter text for body */
   margin: 5px 0;
+}
+/* Inside search-bar.component.scss or your global styles */
+
+.table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  
+}
+
+.table th, .table td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table thead {
+  background-color: black;
+  color: white;
+}
+
+.table tbody tr:hover {
+  background-color: #f5f5f5;
 }

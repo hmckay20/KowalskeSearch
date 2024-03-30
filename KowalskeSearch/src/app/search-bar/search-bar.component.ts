@@ -1,18 +1,14 @@
 import { Component } from '@angular/core';
-import { ProductService } from './Service/product.service'; // Correct import statement based on your structure // Update the path as necessary
+import { ProductService } from './Service/product.service'; // Ensure correct import path
+
+
+
 
 export class ProductInfo {
-  name: string;
-  description: string;
-  salePrice: string;
-  originalPrice: string;
-
-  constructor() {
-    this.name = '';
-    this.description = '';
-    this.salePrice = '';
-    this.originalPrice = '';
-  }
+  name: string = '';
+  description: string = '';
+  salePrice: string = '';
+  originalPrice: string = '';
 }
 
 @Component({
@@ -21,19 +17,26 @@ export class ProductInfo {
   styleUrls: ['./search-bar.component.scss']
 })
 export class SearchBarComponent {
-  searchTerm: string = '';
+  searchTerms: string[] = [''];
   productInfos: ProductInfo[] = [];
 
   constructor(private productService: ProductService) { }
 
-  onSearch(event: Event): void {
-    event.preventDefault(); // Prevent form from causing a page reload
-    this.productService.getProductBySerialNumber(this.searchTerm).subscribe({
+  addSearchInput(): void {
+    this.searchTerms.push('');
+  }
+
+  removeSearchInput(index: number): void {
+    this.searchTerms.splice(index, 1);
+  }
+
+  onSearchAll(): void {
+    const nonEmptySearchTerms = this.searchTerms.filter(term => term.trim() !== '');
+    this.productService.getProductsBySerialNumbers(nonEmptySearchTerms).subscribe({
       next: (data) => {
-        // Insert the new search result at the beginning of the array
-        this.productInfos.unshift(data);
+        this.productInfos = data;
       },
-      error: (error) => {
+      error: (error: any) => {
         console.error('Error fetching product info:', error);
       }
     });
